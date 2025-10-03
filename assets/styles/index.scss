@@ -1,16 +1,10 @@
-@font-face {
-  font-family: poppins;
-  src: url(../assets/font/Poppins-Medium.ttf);
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins;
 }
 body {
-  background: url(..//assets/img/money-5029288.webp) center/cover;
+  background: url(../img/money-5029288.webp) center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -23,11 +17,10 @@ header {
     margin: 20px 0;
   }
   .form {
-    backdrop-filter: blur(30px);
-    width: 45%;
+    backdrop-filter: blur(10px);
+    width: 60%;
     margin: 10px auto;
     padding: 20px 30px;
-    border-radius: 5px;
     .form-container {
       form {
         display: grid;
@@ -47,36 +40,18 @@ header {
         input[type="submit"],
         select {
           width: 90%;
-          height: 35px;
+          height: 30px;
           border-radius: 5px;
           outline: none;
           border: 1px solid transparent;
-          margin: 5px 0 20px 0;
         }
         textarea {
           width: 90%;
-          height: 140px;
+          height: 80px;
           border-radius: 5px;
           outline: none;
           border: 1px solid transparent;
           resize: none;
-        }
-        p {
-          padding: 10px 0;
-        }
-        input::placeholder {
-          padding: 10px;
-        }
-        textarea::placeholder {
-          padding: 10px;
-        }
-        input[type="submit"] {
-          cursor: pointer;
-          background: wheat;
-        }
-        .radio {
-          display: flex;
-          flex-direction: column;
         }
       }
     }

@@ -1,16 +1,11 @@
-@font-face {
-  font-family: poppins;
-  src: url(../assets/font/Poppins-Medium.ttf);
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins;
 }
 
 body {
-  background: url(..//assets/img/money-5029288.webp) center/cover;
+  background: url(../img/money-5029288.webp) center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -20,12 +15,11 @@ header .header-contain {
   margin: 20px 0;
 }
 header .form {
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-  width: 45%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 60%;
   margin: 10px auto;
   padding: 20px 30px;
-  border-radius: 5px;
 }
 header .form .form-container form {
   display: grid;
@@ -47,48 +41,16 @@ header .form .form-container form input[type=number],
 header .form .form-container form input[type=submit],
 header .form .form-container form select {
   width: 90%;
-  height: 35px;
+  height: 30px;
   border-radius: 5px;
   outline: none;
   border: 1px solid transparent;
-  margin: 5px 0 20px 0;
 }
 header .form .form-container form textarea {
   width: 90%;
-  height: 140px;
+  height: 80px;
   border-radius: 5px;
   outline: none;
   border: 1px solid transparent;
   resize: none;
-}
-header .form .form-container form p {
-  padding: 10px 0;
-}
-header .form .form-container form input::-moz-placeholder {
-  padding: 10px;
-}
-header .form .form-container form input:-ms-input-placeholder {
-  padding: 10px;
-}
-header .form .form-container form input::placeholder {
-  padding: 10px;
-}
-header .form .form-container form textarea::-moz-placeholder {
-  padding: 10px;
-}
-header .form .form-container form textarea:-ms-input-placeholder {
-  padding: 10px;
-}
-header .form .form-container form textarea::placeholder {
-  padding: 10px;
-}
-header .form .form-container form input[type=submit] {
-  cursor: pointer;
-  background: wheat;
-}
-header .form .form-container form .radio {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
 }/*# sourceMappingURL=index.css.map */

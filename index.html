@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
       <div class="form">
         <div class="form-container">
           <form action="#" id="survey-form">
-            <div>
+            <div class="name">
               <label for="Name" id="name-label">Name</label>
               <input
                 type="text"
@@ -25,7 +26,7 @@
                 required
               />
             </div>
-            <div>
+            <div class="mail">
               <label for="email" id="email-label">Email</label>
               <input
                 id="email"
@@ -34,8 +35,8 @@
                 required
               />
             </div>
-            <div>
-              <label for="age" id="number-label">age</label>
+            <div class="age">
+              <label for="age" id="number-label">Age</label>
               <input
                 type="number"
                 id="number"
@@ -45,7 +46,7 @@
                 placeholder="Entrez votre âge"
               />
             </div>
-            <div>
+            <div class="other">
               <label for="dropdown">
                 Quelle option décrit le mieux votre rôle actuel ?
               </label>
@@ -59,11 +60,46 @@
               </select>
             </div>
 
-            <div>
-              <input type="radio" value="Definitivement" name="choix" />
-              Définitivement
-              <input type="radio" value="Peut etre" name="choix" /> Peut-être
-              <input type="radio" value="Pas sure" name="choix" /> Pas sûr
+            <div class="radio">
+              <div>
+                <input
+                  type="radio"
+                  id="definitivement"
+                  value="Definitivement"
+                  name="choix"
+                />
+                <label for="definitivement">Définitivement</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="peut-etre"
+                  value="Peut etre"
+                  name="choix"
+                />
+                <label for="peut-etre">Peut-être</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="pas-sure"
+                  value="Pas sure"
+                  name="choix"
+                />
+                <label for="pas-sure">Pas sûr</label>
+              </div>
+            </div>
+            <div class="other">
+              <label for="dropdown">
+                What is your favorite feature of freeCodeCamp?
+              </label>
+              <select name="role" id="dropdown" required>
+                <option value="" disabled selected>Challenges</option>
+                <option value="student">Projects</option>
+                <option value="fulltimejob">Community</option>
+                <option value="fulltimelearner">Open source</option>
+              </select>
             </div>
             <div>
               <p>Choisissez vos centres d'intérêt :</p>
@@ -144,7 +180,12 @@
               <label for="additional">Additional Courses</label><br />
             </div>
             <div>
-              <textarea name="" id="texta"></textarea>
+              <p>Any comments or suggestions?</p>
+              <textarea
+                name=""
+                id="texta"
+                placeholder="Entrer votre code ici"
+              ></textarea>
               <input type="submit" id="submit" value="Submit" />
             </div>
           </form>
