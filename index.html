@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-contain">
+        <h1 id="title">Formulaire d’enquête freeCodeCamp</h1>
+        <p id="description">
+          Merci d’avoir pris le temps de nous aider à améliorer la plateforme.
+        </p>
+      </div>
+      <div class="form">
+        <div class="form-container">
+          <form action="#" id="survey-form">
+            <div>
+              <label for="Name" id="name-label">Name</label>
+              <input
+                type="text"
+                placeholder="Entrez votre nom"
+                id="name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" id="email-label">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Entrez votre email"
+                required
+              />
+            </div>
+            <div>
+              <label for="age" id="number-label">age</label>
+              <input
+                type="number"
+                id="number"
+                name="age"
+                min="1"
+                max="99"
+                placeholder="Entrez votre âge"
+              />
+            </div>
+            <div>
+              <label for="dropdown">
+                Quelle option décrit le mieux votre rôle actuel ?
+              </label>
+              <select name="role" id="dropdown" required>
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="fulltimejob">Full Time Job</option>
+                <option value="fulltimelearner">Full Time Learner</option>
+                <option value="prefernot">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <input type="radio" value="Definitivement" name="choix" />
+              Définitivement
+              <input type="radio" value="Peut etre" name="choix" /> Peut-être
+              <input type="radio" value="Pas sure" name="choix" /> Pas sûr
+            </div>
+            <div>
+              <p>Choisissez vos centres d'intérêt :</p>
+
+              <input
+                type="checkbox"
+                id="frontend"
+                name="interests"
+                value="Front-end Projects"
+              />
+              <label for="frontend">Front-end Projects</label><br />
+
+              <input
+                type="checkbox"
+                id="backend"
+                name="interests"
+                value="Back-end Projects"
+              />
+              <label for="backend">Back-end Projects</label><br />
+
+              <input
+                type="checkbox"
+                id="datavis"
+                name="interests"
+                value="Data Visualization"
+              />
+              <label for="datavis">Data Visualization</label><br />
+
+              <input
+                type="checkbox"
+                id="challenges"
+                name="interests"
+                value="Challenges"
+              />
+              <label for="challenges">Challenges</label><br />
+
+              <input
+                type="checkbox"
+                id="opensource"
+                name="interests"
+                value="Open Source Community"
+              />
+              <label for="opensource">Open Source Community</label><br />
+
+              <input
+                type="checkbox"
+                id="videos"
+                name="interests"
+                value="Videos"
+              />
+              <label for="videos">Videos</label><br />
+
+              <input
+                type="checkbox"
+                id="meetups"
+                name="interests"
+                value="City Meetups"
+              />
+              <label for="meetups">City Meetups</label><br />
+
+              <input type="checkbox" id="wiki" name="interests" value="Wiki" />
+              <label for="wiki">Wiki</label><br />
+
+              <input
+                type="checkbox"
+                id="forum"
+                name="interests"
+                value="Forum"
+              />
+              <label for="forum">Forum</label><br />
+
+              <input
+                type="checkbox"
+                id="additional"
+                name="interests"
+                value="Additional Courses"
+              />
+              <label for="additional">Additional Courses</label><br />
+            </div>
+            <div>
+              <textarea name="" id="texta"></textarea>
+              <input type="submit" id="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
